@@ -26,11 +26,6 @@ cp -r $PWD/.config/.zshrc $HOME/.config/.zshrc
 echo "Installing zsh plugins..."
 cp -r  $PWD/scripts/* $HOME/stuff/scripts/
 
-# font
-echo "Installing Iosevka nerd font..."
-[ ! -d "$HOME/.local/share/Iosevka" ] && mkdir -p $HOME/.local/share/fonts/Iosevka/
-git clone https://github.com/notusknot/Iosevka-nerd $HOME/.local/share/fonts/Iosevka/
-
 # wallpaper
 [ ! -d "$HOME/stuff/pictures/wallpapers" ] && mkdir -p $HOME/stuff/pictures/wallpapers
 cp -r $PWD/nord.jpg $HOME/stuff/pictures/wallpapers
